@@ -42,5 +42,5 @@ function getCookie(cname) {
 }
 
 function deleteCookie(cname) {
-    document.cookie = cname + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        document.cookie = cname + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/hmis;";
 }
