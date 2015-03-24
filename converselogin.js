@@ -27,7 +27,7 @@ function checkIfUserIsDistrictHospitalHMISdatamanager() {
 		type: "GET",
 		url: "../../api/me",
 		success: function(data, textStatus, jqXHR) {
-            if (data.userCredentials.userAuthorityGroups[0].name == "District Hospital HMIS data managers") {
+           if (data.userCredentials.userRoles[0].name == "District Hospital HMIS data managers") {
                 isDistrictHospitalHMISdatamanager = true;
             } 
             else if(data.id=="HkhYnzFnuSs"){
